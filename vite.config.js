@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
+// defineConfig ko function ke saath use karo
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base:"/TodoApp/",
 })
